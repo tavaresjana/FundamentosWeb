@@ -8,40 +8,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- p/ compatibilidade com o edge -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- pra deixar seu site responsivo, mas vc precisa configurar depois -->
-    <title>Meu perfil</title> <!-- esse título aparece na aba/guia da página -->
+    <title>JT Perfil</title> <!-- esse título aparece na aba/guia da página -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-    <ul>
+<body> <nav>
+        <ul id="menu">
         <li>
-            <a href="index.html"> Home </a>
+           <a href="index.html" class="fcolornav"> Home </a>
         </li>
         <li>
-            <a href="contato.html"> Contato </a>
+            <a href="contato.html" class="fcolornav"> Contato </a>
         </li>
     </ul>
+    </nav>
+    <h1 class="center fcolortitle">Sobre a Janaina</h1>
+    <div class="container">
 
-    <h1>Sobre a Janaina</h1>
+        <div>
+            <img class="br-50 wh-300 p-30" src="assets/img/ArteRostoLinhas.jpg" alt=""> <!-- descrição do alt é importante para acessibilidade -->
+        </div>
 
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rerum temporibus praesentium mollitia
-        tempore autem dolor odit cum natus,aliquam maxime velit facilis! Rem, magnam animi vel ratione recusandae
-        molestias!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rerum temporibus praesentium mollitia Lorem
-        ipsum dolor
-        sit amet consectetur adipisicing elit. Officia rerum temporibus praesentium mollitia Lorem ipsum dolor sit amet
-        consectetur
-        adipisicing elit. Officia rerum temporibus praesentium mollitia tempore autem dolor odit cum natus,aliquam
-        maxime velit facilis! recusandae molestias!
-    </p>
+        <div class ="p-30 fcolorbody mr-150">
+        <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rerum temporibus praesentium
+            mollitia
+            tempore autem dolor odit cum natus,aliquam maxime velit facilis! Rem, magnam animi vel ratione recusandae
+            molestias!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rerum temporibus praesentium mollitia Lorem
+            ipsum dolor
+            sit amet consectetur adipisicing elit. Officia rerum temporibus praesentium mollitia Lorem ipsum dolor sit
+            amet
+            consectetur
+            adipisicing elit. Officia rerum temporibus praesentium mollitia tempore autem dolor odit cum natus,aliquam
+            maxime velit facilis! recusandae molestias!
+        </p>
+        </div>
+       <!-- Alterei o local da imagem para testar a leitura de texto do HTML, que
+        é feita de cima para baixo e da esquerda para direita. Mantendo a imagem aqui
+        ela apareceria na direita, alterando e colocando antes do texto (como está) ela aparece na esquerda.
 
-    <img src="assets/img/ArteRostoLinhas.jpg" alt=""> <!-- descrição do alt é importante para acessibilidade -->
+            <div>
+            <img class="br-50 wh-300 p-30" src="assets/img/ArteRostoLinhas.jpg" 
+            alt=""> <!-descrição do alt é importante para acessibilidade->
+        </div> -->
+    </div>
 
-    <h2>Vídeo</h2>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DBNWZxIan8g" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+    <h2 class="center fcolortitle">Vídeo escolhido</h2>
+   
+    <div class="container mb-50"> <!--chamando a classe que já está definida-->
+    <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/DBNWZxIan8g" 
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
     </iframe>
-</body>
+    </div>
 
+    <hr> <!--TAG de separação de conteúdos-->
+       <footer> <!--aqui no footer é legal ter ícones de redes socais para o pessoal encontrar/seguir a gente-->
+       
+        <div class="container mb-50">
+            <!--para tornar os ícones clicavéis vamos associar links as imagens-->
+            <a href="https://github.com/tavaresjana">
+            <img class="tm-social p-30" src="assets/img/github.png" alt="Logo github">
+            </a>
+
+            <a href="https://www.linkedin.com/in/janainatavares/">
+            <img class="tm-social p-30" src="assets/img/linkedin.png" alt="Logo linkedin">
+            </a>
+
+            <a href="mailto:tjanaina92@gmail.com">
+            <img class="tm-social p-30" src="assets/img/email.png" alt="E-mail tjanaina92@gmail.com">
+            </a>
+        </div>
+
+        <p class="center"> <!--texto do rodapé / &copy símbolo de copyright-->
+          Todos os direitos reservados: JT &copy;  
+       </p> 
+    </footer>
+
+</body>
 </html>
